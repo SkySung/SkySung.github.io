@@ -1,0 +1,78 @@
+<!DOCTYPE html><html class="appearance-auto" lang="zh-TW"><head><meta charset="UTF-8"><title>你知道，美國曾有一度有染指整個以太坊底層密碼技術的大好機會嗎？｜技術篇</title><meta name="description" content="Push the limit."><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q || []).push(arguments)},i[r].l=1 * new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'G-N2TD1LN1JK', 'auto');
+ga('send', 'pageview');</script><!-- End Google Analytics -->
+<!-- GA4--><script async src="https://www.googletagmanager.com/gtag/js?id=G-N2TD1LN1JK"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-N2TD1LN1JK');</script><!-- End GA4 -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/logo.svg"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="TL;DR
+
+給文章太長來不及看完的你：後來以太坊沒有採用有問題的加密技術。
+
+如果你是區塊鏈愛好者，較深入的幣圈投資者，你可能聽過SHA-2、SHA-3系列的加密演算法。如果你是區塊鏈產業內的軟體工程師，你可能用過keccak256和sha3加密演算法，在0.5.0版本的solidity將sha3函式全面移除，keccak256和SHA-3到底差別在哪裡？🧐
+SHA系列加密演算法
+讓我們回到1993年的美國，網際網路之父Tim Berners-Lee發展的全球資訊網(World Wide Web)帶起了大量的網路基礎設施和通訊。美國感受到，未來經由網際網路傳輸資訊是勢在必行的，但將資訊近乎透明的由HTTP傳輸協定送出去，是美國不樂見的。由美國國家安全局(NSA)所設計，國家標準技術研究所(NIST)發布.."><meta name="generator" content="Hexo 5.4.0"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">安分守己的韭菜苗</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">你知道，美國曾有一度有染指整個以太坊底層密碼技術的大好機會嗎？｜技術篇</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">點擊返回頁首</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">首頁</a></h3><h3 class="is-inline-block"><a href="/about">關於</a></h3><h3 class="is-inline-block"><a href="/archives">過去文章</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">首頁</a></h3><h3 class="is-inline-block"><a href="/about">關於</a></h3><h3 class="is-inline-block"><a href="/archives">過去文章</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#SHA%E7%B3%BB%E5%88%97%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95"><span class="toc-text">SHA系列加密演算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SHA-3%E8%88%87Ethereum"><span class="toc-text">SHA-3與Ethereum</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8B%B1%E9%9B%84%E5%91%8A%E5%AF%86%E8%80%85Edward-Snowden"><span class="toc-text">英雄告密者Edward Snowden</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B8%BD%E7%B5%90%EF%BC%9A%E6%AF%94%E7%89%B9%E5%B9%A3%E3%80%81%E4%BB%A5%E5%A4%AA%E5%B9%A3"><span class="toc-text">總結：比特幣、以太幣</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%8C%E8%A8%98"><span class="toc-text">後記</span></a></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/blockchain"><i class="tag post-item-tag">blockchain</i></a><a href="/tags/%E6%8A%80%E8%A1%93%E7%AF%87"><i class="tag post-item-tag">技術篇</i></a><a href="/tags/%E9%80%B2%E9%9A%8E"><i class="tag post-item-tag">進階</i></a><a href="/tags/%E5%AF%86%E7%A2%BC%E5%AD%B8"><i class="tag post-item-tag">密碼學</i></a><a href="/tags/SHA-256"><i class="tag post-item-tag">SHA-256</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">你知道，美國曾有一度有染指整個以太坊底層密碼技術的大好機會嗎？｜技術篇</h1><time class="has-text-grey" datetime="2021-01-02T05:08:43.000Z">2021年1月2日</time><article class="mt-2 post-content"><p>TL;DR</p>
+<blockquote>
+<p>給文章太長來不及看完的你：後來以太坊沒有採用有問題的加密技術。</p>
+</blockquote>
+<p>如果你是區塊鏈愛好者，較深入的幣圈投資者，你可能聽過<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/SHA-2">SHA-2</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/SHA-3">SHA-3</a>系列的加密演算法。如果你是區塊鏈產業內的軟體工程師，你可能用過keccak256和sha3加密演算法，在0.5.0版本的solidity將sha3函式全面移除，keccak256和SHA-3到底差別在哪裡？🧐</p>
+<h2 id="SHA系列加密演算法">SHA系列加密演算法</h2>
+<p>讓我們回到1993年的美國，網際網路之父Tim Berners-Lee發展的全球資訊網(World Wide Web)帶起了大量的網路基礎設施和通訊。美國感受到，未來經由網際網路傳輸資訊是勢在必行的，但將資訊近乎透明的由HTTP傳輸協定送出去，是美國不樂見的。由<strong>美國國家安全局(NSA)<strong>所設計，<strong>國家標準技術研究所(NIST)<strong>發布的</strong>SHA-0</strong>加密演算法誕生了，SHA-0可以將2^64位元的訊息，壓縮轉化成160位元的訊息摘要。它同時具有不可逆推、抗碰撞的特性。抗碰撞特性代表，不會有兩個不同的資訊，輸入進去之後得到相同的160位元摘要。發布後很快又被NSA修訂成</strong>SHA-1</strong>，修正了一些弱點。</p>
+<p>但是，我們都知道永遠不會有一個密碼是絕對安全的。1998年，CRYPTO98的密碼學大會上提出了一種SHA-0攻擊方式，能從理論上發現一次碰撞，也就是能夠有兩個不同的輸入值，得到相同的輸出值。這代表一個雜湊函式不再具有抵抗攻擊所應具備的計算複雜度。</p>
+<p>你可以這樣想像：
+我用SHA-0演算法和一串密碼加密了一個簽名，來證明一個東西屬於我，但現在有另一個人不知道我的密碼，但它可以做出<strong>一模一樣的簽名</strong>。🤮</p>
+<p>2001年，NIST又發布了SHA-2演算法，這次在運算中的混合程度比起SHA-1大幅提升，但是技術架構上SHA-2和SHA-1雷同。(比特幣採用SHA-2家族中的SHA256加密演算法)</p>
+<p>2004年起不斷的有專家找到更多SHA-0完整碰撞的結果，而且破解結果不只是在理論上了，還出現了實務上破解，並且改進方法使的<strong>破解難度不斷地被降低</strong>。</p>
+<p>2005年起，以王小雲為第一作者的論文找到了完整的SHA-1碰撞。這可以理解成SHA-1正式宣告被破解了，已經形成一套低成本的攻擊算法。</p>
+<p>在加密演算相關的Wiki頁面常常能看到以王小雲為首的論文，橫跨的時間軸也相當長，讓我相當佩服一個人對於一件事情投入的熱情。本篇論文也在2020年獲得國際密碼學會(IACR)的<a target="_blank" rel="noopener" href="https://www.iacr.org/testoftime/">最具時間價值獎(Test-of-Time)</a>，本獎項每年會頒發給15年前、對密碼學領域有持久影響的論文。這讓我覺得蠻有趣的，和科技領域正好相反，因為密碼學所需要的持續安全性，大概也只會有密碼學領域會有這種限定找古早論文來頒獎的情形。</p>
+<p>有感於不斷逼近的各方專家，SHA-2演算法雖然連理論上的破解都還沒有出現，NIST已經未雨綢繆地著手準備SHA-3。在2007年舉辦了<a target="_blank" rel="noopener" href="https://www.nist.gov/news-events/news/2012/10/nist-selects-winner-secure-hash-algorithm-sha-3-competition">NIST雜湊函式競賽</a>，這是一個five-year competition，一直到2012年宣布得獎的是Keccak演算法。這之後NIST進行了一些必要的標準化步驟，使其可以產生224位、256位、384位等等。這是蠻正常的一件事情。2015年NIST發布了<a target="_blank" rel="noopener" href="https://www.nist.gov/news-events/news/2015/08/nist-releases-sha-3-cryptographic-hash-standard">FIPS202標準的SHA-3</a>。</p>
+<p>尷尬的事情來了，NIST一直到2015年八月五號才宣布要使用FIPS202版本的SHA-3作為最終的版本，但是以太坊在七月三十號啟動了<a target="_blank" rel="noopener" href="https://etherscan.io/block/0">創世區塊</a>，所有的account、address、區塊內容使用的依然是當初競賽版本的Keccak256。競賽版本的Keccak演算法安全性上當然沒有問題，只是代表以後Ethereum使用的SHA-3，計算的結果會和其他人的不一樣，很容易和其他人搞錯，當時以太坊還不像現在有一統江湖的能力，和別人搞混會是一件麻煩的事情。</p>
+<p>但是為甚麼後續沒有用升級的手段升級成標準版SHA-3，我想有一部分是因為下面的原因。</p>
+<h2 id="SHA-3與Ethereum">SHA-3與Ethereum</h2>
+<p>Mastering Ethereum是一部面向以太坊生態系軟體開發者的專書，由兩位作者Antonopoulos, Andreas M.和 Wood, Gavin寫成，兩位作者是Vitalik提出以太坊構想時很感興趣的開發者，Gavin是以太坊的聯合創始人兼CTO，Andreas則因為當時正在寫Mastering Bitcoin而較晚加入。我想，這本書的含金量不必質疑。</p>
+<p>以下節錄自<a target="_blank" rel="noopener" href="https://cypherpunks-core.github.io/ethereumbook_zh/05.html">Mastering Ethereum精通以太坊第5章</a>＜密鑰、地址＞：</p>
+<p>‘’‘在標準過程完成後，NIST調整了Keccak的一些參數，據稱可以提高效率。這與英雄告密者(編：原文使用heroic whistleblower)愛德華斯諾登透露的檔案暗示NIST可能受到國家安全局的不當影響同時發生，故意削弱Dual_EC_DRBG隨機數生成器標準，有效地在標準隨機數生成器中放置一個後門。’‘’</p>
+<p>白話來說，國安局在標準化過程中，放了一個隨機數產生器，&quot;有可能&quot;留下缺口使的他看起來隨機，但國安局卻有方法可以預測該隨機數。這個加密演算法可能會被大型機構採用，來幫你的銀行密碼加密、大企業的資料數據庫加密、跨國支付資訊加密、恐怖份子網路傳訊加密，只要有網路的地方都有可能使用到它，那如果留下了這道後門，整個網路世界(或至少用此加密法的資料)都掌控在國安局手上。那問題來了，為甚麼是&quot;有可能呢&quot;而不是絕對呢？👀</p>
+<h2 id="英雄告密者Edward-Snowden">英雄告密者Edward Snowden</h2>
+<p>愛德華斯諾登(Edward Snowden)，2004年起進入CIA做一名資訊工程師，2009年開始以外包商身分進入NSA，因為他的工作都是被切割成一小份任務的，他很晚才察覺整個計畫究竟在做甚麼。2013年藉口離開夏威夷到香港後，Snowden聯繫媒體開始揭露部分文件，有香港導演找上他留下了<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=OWVGDBeR42I">短片紀錄</a>和<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=0hLjuVyIIrs">訪談</a>。</p>
+<p>他揭密的是<a target="_blank" rel="noopener" href="https://www.thenewslens.com/article/4148">稜鏡計畫(PRISM)</a>和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/Bullrun_(NSA%E8%A8%88%E7%95%AB)">BullRun</a>，稜鏡計畫相較加密演算法知名多了，白話來說它預計在全球主要光纖網路上安插一個稜鏡，使得經過的資訊都複製一份到政府手中。BullRun則旨在「擊敗特定網絡通信技術中，所使用的加密」，成本是8億美金。</p>
+<p>儘管Snowden選擇做一名吹哨者，他並沒有公開任何的「<strong>內容</strong>」，他選擇告訴大眾「政府正在做這些事情，但是要怎麼判斷，在於你」他只將文件交給<strong>媒體</strong>，希望媒體藉由他們的公信力報導出來的同時能不揭開這些資料的具體內容。</p>
+<p>我找到的最有力的內容是<a target="_blank" rel="noopener" href="https://bits.blogs.nytimes.com/2013/09/10/government-announces-steps-to-restore-confidence-on-encryption-standards/?_r=0">New York Times</a>中，記者的說法是&quot;Snowden的文件顯示，Dual_EC_DRBG就是一個Backdoor。&quot;</p>
+<hr>
+<p>滯留莫斯科並不是Snowden的選擇，他當時在莫斯科轉機打算去往歐洲尋求政治庇護，但是有27個國家都受到了壓力而沒有接受，引述他在影片中說的話，「我不知道你們在機場最久的轉機是多久…但我在莫斯科轉機了四十天(全場大笑)」，一直到律師協助申請了莫斯科的一年期臨時難民。</p>
+<p>他的故事後來被翻拍高登李維主演的《神鬼駭客：史諾登》(2016)，雖然我跟電影世界不熟，但是它所說的&quot;根據真人故事改編&quot;其可信度…見仁見智。更推薦的是《<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E7%AC%AC%E5%9B%9B%E5%85%AC%E6%B0%91">第四公民</a>》(2014)這部紀錄片。</p>
+<hr>
+<p>另一個問題是&quot;Dual_EC_DRBG&quot;是甚麼東西，還有它到底有沒有後門，這個就涉及更技術性的內容了。我長話短說：它後續已經被證實是有漏洞的，但是究竟是不是NSA選擇<strong>故意</strong>留下漏洞已經不可考。我將優質的文章來源留在這裡，有興趣的可以自行閱讀，都是中文的。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hant/%E5%8F%8C%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E7%A1%AE%E5%AE%9A%E6%80%A7%E9%9A%8F%E6%9C%BA%E6%AF%94%E7%89%B9%E7%94%9F%E6%88%90%E5%99%A8">Dual_EC_DRBG–Wikipedia</a></li>
+<li><a target="_blank" rel="noopener" href="https://ckhung0.blogspot.com/2014/03/dual-ec-drbg.html">朝陽科大 洪朝貴副教授</a> ，教授寫的內容偏硬，更推薦下面的網友整理筆記。</li>
+<li><a target="_blank" rel="noopener" href="http://dr.waynehuang.cc/2013/12/nsa-rsa-backdoor.html">WAYNE 韋恩筆記</a>，挖了一下背景也是電腦科學PhD、海外創業的大神。</li>
+</ul>
+<h2 id="總結：比特幣、以太幣">總結：比特幣、以太幣</h2>
+<p>比特幣使用的是SHA-2，以太幣使用的是Keccak256。</p>
+<p>時至今日，比特幣大量使用的SHA-2演算法目前還未出現任何理論上、實務上的破解。但可以說它是有可能發生的，另外量子電腦的發展也逐漸趕上，甚至在特定領域已經領先傳統電腦，SHA-2演算法終有破解的一天。</p>
+<p>根據<a target="_blank" rel="noopener" href="https://blocktrend.substack.com/p/-ft--b40">曾可唯在區塊勢</a>中的說法，量子電腦破解比特幣這件事情，在極度樂觀下預估出現理論上的破解會在近10-20年，而比特幣勢必需要一次系統升級，但因為創始人中本聰已經淡出公眾視野，比特幣開發團隊一直是群龍無首、百家爭鳴、三國鼎立的情況，在後續的更新上會遇到很多阻力。這也是後續分叉出比特幣現金、Bitcoin Gold等等分叉的主要原因。</p>
+<p>相較之下，目前由Vitalik主導的以太坊基金會不論是傳統電腦或量子電腦攻擊前，會有更好的共識決定升級方向，這是我比較看好的。</p>
+<h2 id="後記">後記</h2>
+<p>我覺得為了準備這一篇，我基本上讀的資料應該夠我寫一份密碼學科系的大學生小論文（？）我並不是數學、資工領域畢業的學生，比較沒有辨別能力的我為了要保證輸出品質，這些資料我是能盡量找原文閱讀而不屈就於被轉譯過的媒體文章。這次的主題注定艱澀小眾，但我寫起來受益良多，對整個區塊鏈底層的密碼學有了新的認識，也了解到了到底有多少人在為我們的日常生活不停的努力。</p>
+<p>其實這篇文章寫完，其實還是有一些不足的地方，以太坊基金會是以社群共識的方式運作的，在2013年應該有很多關於使用哪種加密法的討論，但是我實在沒有辦法去翻回2013年的討論一篇一篇看，就先暫時停在這裡吧。</p>
+<p>資料來源、推薦延伸閱讀：
+<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PArFP7ZJrtg">Edward Snowden - “Permanent Record” &amp; Life as an Exiled NSA Whistleblower | The Daily Show</a>
+Snowden發表新書《永久檔案》時，在莫斯科跨洋連線到The Daily Show，強烈推薦可以看這部影片，你會發現Snowden很有幽默感(或者是我對資安領域抱有刻板印象…抱歉…)，他面臨的愛國心與憲法違背，為什麼選擇出來揭露這件事情、還有為什麼不回到美國打官司。影片中他常說他就是一個ordinary people，我去找了他的生平，他甚至學歷上只有等同高中肄業的文憑，他就是一個很喜歡電腦技術，偶爾打打電動的普通人而已。</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html?pagewanted=all">N.S.A. Able to Foil Basic Safeguards of Privacy on Web</a></p>
+<p>New York Times相關報導</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://medium.com/etccooperative/why-change-the-proof-of-work-algorithm-to-keccak-256-sha3-e327b8313824">Why Change The Ethereum Classic Proof of Work Algorithm to Keccak-256 (SHA3)</a></p>
+<p>關於以太坊使用Keccak演算法的一段小歷史，還有以太坊其實有對此演算法做一些小修改以更適合之後升級到PoS挖礦共識。</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=bTOJ9An9wpE">SHA-3, Keccak and SHAKE (Sponge Function)–Bill Buchanan OBE</a></p>
+<p>Bill Buchanan是愛丁堡納皮爾大學的教授，他在cyber security領域的貢獻獲得了大英帝國騎士勳章(OBE)。影片中他解說了當年競賽中其他演算法的性能比較，還有Keccak的運作原理。SHAKE是SHA-3家族中，位元數可以變動的加密演算法。從影片中我覺得講解的很生動，不會有教授上課打瞌睡的感覺，一開始看到維基百科上的邏輯運算圖我整個覺得不妙，但是教授用很簡單的方式一步驟一步驟的說明，讓我自己都很意外我居然開始看懂密碼學了，還有教授每次念Keccak(讀作catch-ache)都會卡住很好笑哈哈哈哈。可惜影片中教授也沒有給出解答，關於NIST究竟有沒有在演算法中留下後門的問題…</p>
+<p>你對密碼學有興趣？那你或許會喜歡
+<a href="https://skysung.github.io/blockchain-technology/">技術篇(一)</a>
+<a href="https://skysung.github.io/blockchain-technology-2/">技術篇(二)</a></p>
+</article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><a class="button is-default" href="/blockchain-technology/" title="從0開始的區塊鏈知識：比特幣、區塊鏈(Bitcoin, Blockchain)｜技術篇"><i class="iconfont icon-prev mr-2 has-text-grey"></i><span class="has-text-weight-semibold">上一頁: 從0開始的區塊鏈知識：比特幣、區塊鏈(Bitcoin, Blockchain)｜技術篇</span></a><a class="button is-default" href="/blockchain-road-map/" title="從0開始的區塊鏈知識：學習地圖"><span class="has-text-weight-semibold">下一頁: 從0開始的區塊鏈知識：學習地圖</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="SkySung/SkySung.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/SkySung"><i class="iconfont icon-github"></i></a><!-- Ins--><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//GoodLeek"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> 安分守己的韭菜苗 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/post.js"></script></body></html>

@@ -27,6 +27,31 @@
     
     
     <entry>
+      <title>Swarm ICO前全面解析｜實作篇</title>
+      <link href="swarm-introduce/"/>
+      <url>swarm-introduce/</url>
+      
+        <content type="html"><![CDATA[<h3 id="好消息">好消息</h3><ul><li><p>過去在CoinList上進行ICO的<a href="https://cryptorank.io/tag/coinlist-ico">幣種整理</a>👇<img src="../images/swarm-introduce/ico-list.jpg" alt="ico-list">比較有名的是Solana公鏈、Filecoin(同樣為去中心化儲存項目)、和Flow(NBA Top Shot卡牌)。你可以看到ROI USD，就是他們ICO的價格到現在的價格成長了多少，最神奇的大概是Flow的140倍(嗚嗚我沒參與到)，而ATH ROI代表他們ICO價格到歷史最高成長幾倍。必須要說，有的項目並沒有很賺錢，而爆賺的這幾個項目共同點大概是&quot;知名&quot;，將觸手伸出了加密貨幣以外的圈子。但我認為這樣的投資報酬率值得嘗試(記得高風險😉)</p></li><li><p>第一輪的私募價格為0.2美元，第二輪私募為0.25美元，我們能買到的公募價格為1.92美元，<s>目前有消息指稱，有人在場外交易以30美元購買。<strong>但是</strong>，此消息目前存疑！</s>經過我深挖結果，目前BZZ在二線交易所價格如下(我這樣講會很過分嗎？)<img src="../images/swarm-introduce/lbank-bzz.jpg" alt="lbank-bzz">LBank：05/15上線，目前278USDT。</p></li></ul><hr><p><img src="../images/swarm-introduce/xt.com-bzz.jpg" alt="xt.com-bzz"><a href="http://XT.com">XT.com</a>：05/31上線，目前167USDT。</p><hr><p>這兩家交易所在<a href="https://coinmarketcap.com/rankings/exchanges/">CoinMarketCap</a>和<a href="https://www.coingecko.com/zh-tw/%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0">CoinGecko</a>，排名大概介於20多~50多名。我想應該能稱呼為二線交易所。但我不為他們兩家安全性掛保證。</p><p>在各小的交易所價格如下👇<img src="../images/swarm-introduce/price-list.jpg" alt="price-list"></p><h3 id="壞消息">壞消息</h3><ul><li>名氣不夠，這種真的技術底層的東西幾乎沒有炒作價值，不像是NFT卡牌，一般人非常好入手與理解。無法出圈，幾乎不可能爆富。</li><li>CoinList排隊出了名難排隊，根據不可靠統計為3~5%。如果你要多帳號記得1.要用不同裝置註冊2.不同IP註冊(你朋友開Wifi給你)3. 不同身分註冊，當然。CoinList會鎖帳號的，IP一定要小心。</li><li>Swarm並不是第一款去中心化儲存項目，這篇整理了他的前輩們(<a href="https://0xzx.com/zh-tw/2021051308001430691.html">0x資訊2021/05/13</a>)、(<a href="https://blockcast.it/2021/04/12/panews-an-overview-of-decentralized-storage-networks/">區塊客2021/04/12</a>)。簡單來講，沒有誰特別出色到一定能贏到最後，也可以說是各有擅場。</li><li>在這篇整理的「<a href="https://www.chainnews.com/zh-hant/articles/998454942888.htm">募款歷史</a>」中，你會發現投資的機構並不豪華。(但是你看看明星陣容Fei Protocol翻車🤣)</li><li>另外還有負面的<a href="https://news.huoxing24.com/20210603155522082966.html">三大問題待解</a>，也應該要先看看。我自己認為商業模型讓人擔憂😢</li></ul><h2 id="我的想法">我的想法</h2><p>去中心化儲存是有需求的，我個人認為與<strong>現行DApp、DeFi串接最容易的項目</strong>能笑到最後，在這方面原生在以太坊上的Swarm或許有機會。</p><p>但是去中心化儲存，真的有需求嗎？有甚麼資料一定非得要去中心化儲存不可？中心化儲存的AWS、Google都好用太多了。唯一我想到一定要去中心化儲存的大概是維基解密…另一種就是你將你的NFT全套內容都放進去中心化儲存，實現真正的永久保存，沒有人可以刪除你的NFT，但…我們依然能放進中心化儲存就好？</p><p>在機會超多，雷也超多的加密貨幣圈裡，XiXi Huang的<a href="https://superdcc.medium.com/%E8%AB%8B%E9%9B%A2%E9%96%8B%E5%B9%A3%E5%9C%88-%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%8A%95%E8%B3%87%E5%B9%B4%E5%88%A9%E7%8E%87%E4%B8%8D%E5%88%B0-50-8699cb0e1dcc">啞鈴式投資</a>很棒。間單來說是將你的投資額分為極度保守+極度激進，ICO就是我用少量的錢找爆擊機會的。投入時間研究+少量金錢，如果你要說這和研究賭馬或六合彩一樣…我會說<img src="../images/swarm-introduce/welcome.jpeg" alt="Keanu Reeves"></p><h2 id="官方資料">官方資料</h2><p><a href="https://docs.ethswarm.org/the-book-of-swarm-viktor-tron-v1.0-pre-release7.pdf">THE BOOK of Swarm</a><a href="https://github.com/ethersphere/swarm">Github</a><a href="https://twitter.com/ethswarm">Swarm推特</a>，目前1萬Fellower。<a href="https://discord.com/invite/wdghaQsGq5">Discord群</a>，目前30,000名成員。<a href="https://www.reddit.com/r/ethswarm/">Reddit群</a>，目前869Members。有趣的是目前有人對<a href="https://www.reddit.com/r/ethswarm/comments/nsc7rv/no_one_knows_initial_circ_supply_no_one_knows/">CoinList不太滿意</a>。</p><p>Swarm一詞可能源自於中本聰2010/12/11在論壇上的<a href="https://bitcointalk.org/index.php?topic=2216.msg29280#msg29280">發文</a>。「the swarm is headed towards us」。</p><h2 id="第三方資料">第三方資料</h2><ul><li><a href="https://coinmarketcap.com/currencies/ethereum-swarm/ico/">coinmarketcap</a></li><li><a href="https://www.feixiaohao.com/currencies/ethereumswarm/">非小號</a></li><li>目前Coingecko還沒上BZZ</li></ul><hr><p>以太坊的<a href="https://ethereum.org/en/developers/docs/storage/#related-tools">去中心化儲存項目列表</a></p><p>目前唯一中文講解的影片<a href="https://youtu.be/buDx_maVzb8">币圈老韭菜</a>，帶你用中文看一遍CoinList上的英文內容。但我個人看完覺得內容還是比較淺的，並沒有特別讓人拍手叫好的技術。</p><h3 id="其他去中心化儲存">其他去中心化儲存</h3><p>另一款去中心化儲存項目<a href="https://www.chainnews.com/zh-hant/articles/124011762292.htm">Arweave</a>。文章很長，雖然內容是在講AR，但很適合你初步認識去中心化儲存世界。<s>是獨立建另外一條鏈的。(待確認，也有人認為AR算是IPFS協議上的應用層)</s></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 入門 </tag>
+            
+            <tag> 幣圈投資 </tag>
+            
+            <tag> 去中心化儲存 </tag>
+            
+            <tag> 實作篇 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>手把手教你Swarm ICO｜實作篇</title>
       <link href="swarm-eth-ido/"/>
       <url>swarm-eth-ido/</url>

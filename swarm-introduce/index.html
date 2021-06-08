@@ -10,29 +10,23 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-N2TD1LN1JK');</script><!-- End GA4 -->
 <!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/logo.svg"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/post.css"><link rel="stylesheet" href="/style/themes/highlight-theme-light.css"><script src="/js/highlight.pack.js"></script><meta name="description" content="本篇文章不構成投資建議，僅作為資料整理之用
+不故弄玄虛、不捧不吹、多少資料講多少話
 
-如果你是來找購買機制介紹，我放在手把手教你Swarm ICO和CoinList中，3. 回答題目，了解購買機制這裡。
+這次購買機制有點複雜，如果你是來找購買機制介紹，我放在手把手教你Swarm ICO和CoinList中，3. 回答題目，了解購買機制這裡。
 
-說是
-我不想介紹一堆技術向的內容給你，因為其實意義不大，我一個菜鳥哪有可能審計大神的代碼。不管是官方文件還是GitHub內容一定漂漂亮亮的好嘛😂
-但是在一個不到700人訂閱的YT頻道中，你可以看到他們真的花了很多時間在鑽研技術。
-另外你可以自行上網查各大加密貨幣新聞，應該都能找到他是從2015年以太方基金會中孵化出來的項目。這種老項目不多了。
-OK，從技術面來看，我信了。但是商業面呢？我們拭目以待。
-好消息
-
-
-過去在CoinList上進行ICO的幣種整理👇
-
-比較有名的是Solana公鏈、Filecoin(同樣為去中心化儲存項目)、和Fl.."><meta name="generator" content="Hexo 5.4.0"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">安分守己的韭菜苗</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Swarm ICO前全面解析｜實作篇</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">點擊返回頁首</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">首頁</a></h3><h3 class="is-inline-block"><a href="/about">關於</a></h3><h3 class="is-inline-block"><a href="/archives">過去文章</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">首頁</a></h3><h3 class="is-inline-block"><a href="/about">關於</a></h3><h3 class="is-inline-block"><a href="/archives">過去文章</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%AF%87%E6%96%87%E7%AB%A0%E4%B8%8D%E6%A7%8B%E6%88%90%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%EF%BC%8C%E5%83%85%E4%BD%9C%E7%82%BA%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86%E4%B9%8B%E7%94%A8"><span class="toc-text">本篇文章不構成投資建議，僅作為資料整理之用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%BD%E6%B6%88%E6%81%AF"><span class="toc-text">好消息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%9E%E6%B6%88%E6%81%AF"><span class="toc-text">壞消息</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E6%83%B3%E6%B3%95"><span class="toc-text">我的想法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E8%B3%87%E6%96%99"><span class="toc-text">官方資料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9%E8%B3%87%E6%96%99"><span class="toc-text">第三方資料</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%84%B2%E5%AD%98"><span class="toc-text">其他去中心化儲存</span></a></li></ol></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/%E5%85%A5%E9%96%80"><i class="tag post-item-tag">入門</i></a><a href="/tags/%E5%B9%A3%E5%9C%88%E6%8A%95%E8%B3%87"><i class="tag post-item-tag">幣圈投資</i></a><a href="/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%84%B2%E5%AD%98"><i class="tag post-item-tag">去中心化儲存</i></a><a href="/tags/%E5%AF%A6%E4%BD%9C%E7%AF%87"><i class="tag post-item-tag">實作篇</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">Swarm ICO前全面解析｜實作篇</h1><time class="has-text-grey" datetime="2021-06-06T10:22:23.000Z">2021年6月6日</time><article class="mt-2 post-content"><h2 id="本篇文章不構成投資建議，僅作為資料整理之用">本篇文章不構成投資建議，僅作為資料整理之用</h2>
+說是全面解析，事實上技術向內容我不想多談，因為其實意義不大，我一個菜鳥哪有可能審計大神的代碼。不管是官方文件還是GitHub內容一定漂漂亮亮的好嘛😂我的全面解析是…我能夠幫你找到冷門的有價值消息。
+在一個不到700人訂閱的YT頻道中，你可以看到他們真的花了很多時間在討論和鑽研技術。我相信在一個不到700人訂閱的頻道中，應該不存在「假裝我們很忙」這種套路對吧？🤗
+另外你可以自行上網查各大加密貨幣新聞，應該都能找到他是從2015年以太方基金會中孵化出來的項目。這種老項目不多了。不過起.."><meta name="generator" content="Hexo 5.4.0"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">安分守己的韭菜苗</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Swarm ICO前全面解析｜實作篇</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">點擊返回頁首</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">首頁</a></h3><h3 class="is-inline-block"><a href="/about">關於</a></h3><h3 class="is-inline-block"><a href="/archives">過去文章</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">首頁</a></h3><h3 class="is-inline-block"><a href="/about">關於</a></h3><h3 class="is-inline-block"><a href="/archives">過去文章</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E7%AF%87%E6%96%87%E7%AB%A0%E4%B8%8D%E6%A7%8B%E6%88%90%E6%8A%95%E8%B3%87%E5%BB%BA%E8%AD%B0%EF%BC%8C%E5%83%85%E4%BD%9C%E7%82%BA%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86%E4%B9%8B%E7%94%A8"><span class="toc-text">本篇文章不構成投資建議，僅作為資料整理之用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E6%95%85%E5%BC%84%E7%8E%84%E8%99%9B%E3%80%81%E4%B8%8D%E6%8D%A7%E4%B8%8D%E5%90%B9%E3%80%81%E5%A4%9A%E5%B0%91%E8%B3%87%E6%96%99%E8%AC%9B%E5%A4%9A%E5%B0%91%E8%A9%B1"><span class="toc-text">不故弄玄虛、不捧不吹、多少資料講多少話</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%91%E6%9C%9F%E5%A5%BD%E6%B6%88%E6%81%AF"><span class="toc-text">近期好消息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%84%B2%E5%AD%98%E5%A6%82%E4%BD%95%E4%BC%B0%E5%80%BC"><span class="toc-text">去中心化儲存如何估值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%91%E6%9C%9F%E5%A3%9E%E6%B6%88%E6%81%AF"><span class="toc-text">近期壞消息</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E6%83%B3%E6%B3%95"><span class="toc-text">我的想法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%84%B2%E5%AD%98"><span class="toc-text">其他去中心化儲存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E8%B3%87%E6%96%99"><span class="toc-text">官方資料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9%E8%B3%87%E6%96%99"><span class="toc-text">第三方資料</span></a></li></ol></div><div class="column is-9"><header class="my-4"><a href="/tags/%E5%85%A5%E9%96%80"><i class="tag post-item-tag">入門</i></a><a href="/tags/%E5%B9%A3%E5%9C%88%E6%8A%95%E8%B3%87"><i class="tag post-item-tag">幣圈投資</i></a><a href="/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E5%84%B2%E5%AD%98"><i class="tag post-item-tag">去中心化儲存</i></a><a href="/tags/%E5%AF%A6%E4%BD%9C%E7%AF%87"><i class="tag post-item-tag">實作篇</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">Swarm ICO前全面解析｜實作篇</h1><time class="has-text-grey" datetime="2021-06-06T10:22:23.000Z">2021年6月6日</time><article class="mt-2 post-content"><h2 id="本篇文章不構成投資建議，僅作為資料整理之用">本篇文章不構成投資建議，僅作為資料整理之用</h2>
+<h3 id="不故弄玄虛、不捧不吹、多少資料講多少話">不故弄玄虛、不捧不吹、多少資料講多少話</h3>
 <blockquote>
-<p>如果你是來找購買機制介紹，我放在<a href="https://skysung.github.io/swarm-introduce/">手把手教你Swarm ICO和CoinList中</a>，3. 回答題目，了解購買機制這裡。</p>
+<p>這次購買機制有點複雜，如果你是來找購買機制介紹，我放在<a href="https://skysung.github.io/swarm-introduce/">手把手教你Swarm ICO和CoinList</a>中，3. 回答題目，了解購買機制這裡。</p>
 </blockquote>
-<p>說是
-我不想介紹一堆技術向的內容給你，因為其實意義不大，我一個菜鳥哪有可能審計大神的代碼。不管是官方文件還是GitHub內容一定漂漂亮亮的好嘛😂</p>
-<p>但是在一個不到700人訂閱的<a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCu6ywn9MTqdREuE6xuRkskA/videos">YT頻道</a>中，你可以看到他們真的花了很多時間在鑽研技術。</p>
-<p>另外你可以自行上網查各大加密貨幣新聞，應該都能找到他是從2015年以太方基金會中孵化出來的項目。這種老項目不多了。</p>
+<p>說是全面解析，事實上技術向內容我不想多談，因為其實意義不大，我一個菜鳥哪有可能審計大神的代碼。不管是官方文件還是GitHub內容一定漂漂亮亮的好嘛😂我的全面解析是…我能夠幫你找到冷門的有價值消息。</p>
+<p>在一個不到700人訂閱的<a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCu6ywn9MTqdREuE6xuRkskA/videos">YT頻道</a>中，你可以看到他們真的花了很多時間在討論和鑽研技術。我相信在一個不到700人訂閱的頻道中，應該不存在「假裝我們很忙」這種套路對吧？🤗</p>
+<p>另外你可以自行上網查各大加密貨幣新聞，應該都能找到他是從2015年以太方基金會中孵化出來的項目。這種老項目不多了。不過起跑早，真正上線卻一等6年過去了…</p>
+<p>如果你還是對於技術很有興趣，這篇<a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/overview-ethereum-swarm-decentralised-filestore-140009996.html">英文圖文解說</a>是我覺得寫得最好的，內容扎實不含糊。算是技術向入門。</p>
 <p>OK，從技術面來看，我信了。但是商業面呢？我們拭目以待。</p>
-<h3 id="好消息">好消息</h3>
+<h3 id="近期好消息">近期好消息</h3>
 <ul>
 <li>
 <p>過去在CoinList上進行ICO的<a target="_blank" rel="noopener" href="https://cryptorank.io/tag/coinlist-ico">幣種整理</a>👇
@@ -46,35 +40,93 @@ OK，從技術面來看，我信了。但是商業面呢？我們拭目以待。
 <p>第一輪的私募價格為0.2美元，第二輪私募為0.25美元，我們能買到的公募價格為1.92美元，<s>目前有消息指稱，有人在場外交易以30美元購買。<strong>但是</strong>，此消息目前存疑！</s>
 經過我深挖結果，目前BZZ在二線交易所價格如下(我這樣講會很過分嗎？)
 <img src="../images/swarm-introduce/lbank-bzz.jpg" alt="lbank-bzz">
-LBank：05/15上線，目前278USDT。</p>
+<a target="_blank" rel="noopener" href="https://www.lbank.info/exchange/bzz/usdt">LBank</a>：05/15上線，目前278USDT。</p>
 </li>
 </ul>
 <hr>
 <p><img src="../images/swarm-introduce/xt.com-bzz.jpg" alt="xt.com-bzz">
-<a target="_blank" rel="noopener" href="http://XT.com">XT.com</a>：05/31上線，目前167USDT。</p>
+<a target="_blank" rel="noopener" href="https://www.xt.com/tradePro/bzz_usdt">XT.com</a>：05/31上線，目前167USDT。</p>
 <hr>
 <p>這兩家交易所在<a target="_blank" rel="noopener" href="https://coinmarketcap.com/rankings/exchanges/">CoinMarketCap</a>和<a target="_blank" rel="noopener" href="https://www.coingecko.com/zh-tw/%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0">CoinGecko</a>，排名大概介於20多~50多名。我想應該能稱呼為二線交易所。但我不為他們兩家安全性掛保證。</p>
 <p>在各小的交易所價格如下👇
 <img src="../images/swarm-introduce/price-list.jpg" alt="price-list"></p>
-<h3 id="壞消息">壞消息</h3>
+<hr>
+<h4 id="去中心化儲存如何估值">去中心化儲存如何估值</h4>
+<p>我們來做橫向對比。
+<a target="_blank" rel="noopener" href="https://coinmarketcap.com/view/storage/">CoinmarketCap</a>整理了所有儲存項目。
+Filecoin：59億
+BitTirrent：23億
+Holo：13億
+Sia：7.6億
+很火的<a target="_blank" rel="noopener" href="https://coinmarketcap.com/currencies/chia-network/">Chia</a>(XCH)其實…排不上名次。2.9億美元。</p>
+<p>回到Swarm，以這張圖計算👇
+<img src="../images/swarm-introduce/percent.jpg" alt="percent">
+總共6,251萬枚代幣。每一枚1.92去算的話是1億2000萬美元的估值。這樣橫向對比的話1.92美元依然有很大的上升潛力。
+<strong>BUT！</strong>，以0.25美元入場的Early Token Sale實在佔太大一塊餅了，他們脫手變現的可能性也要考慮進去😕。
+早期參與的礦工應該是Ecosystem那塊餅。關於挖礦水也有點深…</p>
+<h3 id="近期壞消息">近期壞消息</h3>
 <ul>
-<li>名氣不夠，這種真的技術底層的東西幾乎沒有炒作價值，不像是NFT卡牌，一般人非常好入手與理解。無法出圈，幾乎不可能爆富。</li>
-<li>CoinList排隊出了名難排隊，根據不可靠統計為3~5%。如果你要多帳號記得1.要用不同裝置註冊2.不同IP註冊(你朋友開Wifi給你)3. 不同身分註冊，當然。CoinList會鎖帳號的，IP一定要小心。</li>
-<li>Swarm並不是第一款去中心化儲存項目，這篇整理了他的前輩們(<a target="_blank" rel="noopener" href="https://0xzx.com/zh-tw/2021051308001430691.html">0x資訊2021/05/13</a>)、(<a target="_blank" rel="noopener" href="https://blockcast.it/2021/04/12/panews-an-overview-of-decentralized-storage-networks/">區塊客2021/04/12</a>)。簡單來講，沒有誰特別出色到一定能贏到最後，也可以說是各有擅場。</li>
-<li>在這篇整理的「<a target="_blank" rel="noopener" href="https://www.chainnews.com/zh-hant/articles/998454942888.htm">募款歷史</a>」中，你會發現投資的機構並不豪華。(但是你看看明星陣容Fei Protocol翻車🤣)</li>
-<li>另外還有負面的<a target="_blank" rel="noopener" href="https://news.huoxing24.com/20210603155522082966.html">三大問題待解</a>，也應該要先看看。我自己認為商業模型讓人擔憂😢</li>
+<li>
+<p>Swarm其實已經不算Vitalik、Gavin Wood等人的項目了，我知道很多華文報導說他們的代碼都留在Swarm中，但實際上The book of Swarm白皮書作者是Viktor Trón，看看他的<a target="_blank" rel="noopener" href="https://twitter.com/zeligf">Twitter</a>，他應該不算名人😰…
+<img src="../images/swarm-introduce/book-of-swarm.jpg" alt="book-of-Swarm"></p>
+</li>
+<li>
+<p>我覺得華文圈有不少人對Swarm抱予過大的期待了，你可以看看<a target="_blank" rel="noopener" href="https://www.theblockbeats.com/news/24762">這篇</a>，思考一下你是不是因為Filecoin和chia而Fomo了。</p>
+</li>
+<li>
+<p>Swarm並不是第一款去中心化儲存項目，這幾篇整理了他的前輩們<a target="_blank" rel="noopener" href="https://0xzx.com/zh-tw/2021051308001430691.html">0x資訊2021/05/13</a>、<a target="_blank" rel="noopener" href="https://blockcast.it/2021/04/12/panews-an-overview-of-decentralized-storage-networks/">區塊客2021/04/12</a>、<a target="_blank" rel="noopener" href="https://news.huoxing24.com/20210331212653785648.html">火星財經2021/03/31</a>。簡單來講，沒有誰特別出色到一定能贏到最後，也可以說是各有擅場。</p>
+</li>
+<li>
+<p>在這篇整理的「<a target="_blank" rel="noopener" href="https://www.chainnews.com/zh-hant/articles/998454942888.htm">募款歷史</a>」中，你會發現投資的機構並不豪華。(但是你看看明星陣容Fei Protocol翻車🤣)</p>
+</li>
+<li>
+<p>另外還有負面的<a target="_blank" rel="noopener" href="https://news.huoxing24.com/20210603155522082966.html">三大問題待解</a>，也應該要先看看。我自己認為商業模型讓人擔憂😢英文原文<a target="_blank" rel="noopener" href="https://coinyuppie.com/filecoin-on-ethereumswarm-still-has-three-problems/">在此</a>。</p>
+</li>
+<li>
+<p>Swarm項目近期幾乎從主流加密貨幣媒體中消失了！<a target="_blank" rel="noopener" href="https://cointelegraph.com/search?query=Swarm">CoinTelegraph</a>裡沒有、<a target="_blank" rel="noopener" href="https://www.coindesk.com/tag/swarm">Coindesk</a>最新的為2018。</p>
+</li>
 </ul>
 <h2 id="我的想法">我的想法</h2>
-<p>去中心化儲存是有需求的，我個人認為與<strong>現行DApp、DeFi串接最容易的項目</strong>能笑到最後，在這方面原生在以太坊上的Swarm或許有機會。</p>
+<ul>
+<li>
+<p>這種真的技術底層的東西幾乎沒有<strong>炒作</strong>價值，不像是Flow的NFT卡牌，一般人非常好入手與理解。無法出圈，幾乎不可能爆富。不過也不排除V神回來喊單，拜託了😢</p>
+</li>
+<li>
+<p>CoinList排隊出了名難排隊，根據不可靠統計為3~5%。如果你要多帳號記得1.要用不同裝置註冊2.不同IP註冊(你朋友開Wifi給你)3. 不同身分註冊，當然。CoinList會鎖帳號的，IP一定要小心。</p>
+</li>
+<li>
+<p>去中心化儲存，我個人認為與<strong>現行DApp、DeFi串接最容易的項目</strong>能笑到最後，在這方面，以「智能合約」原生在以太坊上的Swarm或許會比自成一鏈的Filecoin、Arweave更有優勢。在<a target="_blank" rel="noopener" href="https://www.bloomberg.com/press-releases/2020-12-16/kr1-plc-investment-swarm">KR1投資報告</a>中可以看到以下描述&quot;due to a built-in incentive system enforced through smart contracts on theEthereum blockchain.&quot;我們可以知道Swarm是以智能合約的方式存在以太坊，不需要跨鏈的。</p>
+</li>
+<li>
 <p>但是去中心化儲存，真的有需求嗎？有甚麼資料一定非得要去中心化儲存不可？
-中心化儲存的AWS、Google都好用太多了。唯一我想到一定要去中心化儲存的大概是維基解密…另一種就是你將你的NFT全套內容都放進去中心化儲存，實現真正的永久保存，沒有人可以刪除你的NFT，但…我們依然能放進中心化儲存就好？</p>
+中心化儲存的AWS、Google都好用太多了。唯一我想到一定要去中心化儲存的大概是維基解密…或者另一種，你想將你的NFT全套內容都放進去中心化儲存，實現真正的永久保存，沒有人可以刪除你的NFT，但…我們依然能放進中心化儲存就好？</p>
+</li>
+<li>
+<p>目前我在<a target="_blank" rel="noopener" href="https://github.com/ethersphere/bee">Github</a>上看到的貢獻者(contributors)35人，恩…有點難評價算多還是少。或許Dapp生態已經沒有Swarm的一席之地了…</p>
+</li>
+<li>
+<p>以投資角度而言，目前Swarm的商業模型(或者挖礦獎勵機制)都<strong>非常不透明</strong>，在<a target="_blank" rel="noopener" href="https://coinyuppie.com/filecoin-on-ethereumswarm-still-has-three-problems/">三大問題待解中</a>也有說明。而相關的去中心化儲存生態也還沒看到蹤影，比較成熟的項目是<a target="_blank" rel="noopener" href="https://fairdatasociety.org/">Fair Data Society</a>致力於人們的數據儲存從大公司中分離，回歸個人手上。</p>
+</li>
+</ul>
+<hr>
 <p>在機會超多，雷也超多的加密貨幣圈裡，XiXi Huang的<a target="_blank" rel="noopener" href="https://superdcc.medium.com/%E8%AB%8B%E9%9B%A2%E9%96%8B%E5%B9%A3%E5%9C%88-%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%8A%95%E8%B3%87%E5%B9%B4%E5%88%A9%E7%8E%87%E4%B8%8D%E5%88%B0-50-8699cb0e1dcc">啞鈴式投資</a>很棒。間單來說是將你的投資額分為極度保守+極度激進，ICO就是我用少量的錢找爆擊機會的。投入時間研究+少量金錢，如果你要說這和研究賭馬或六合彩一樣…我會說
-<img src="../images/swarm-introduce/welcome.jpeg" alt="Keanu Reeves"></p>
+<img src="../images/swarm-introduce/welcome.jpeg" alt="Keanu Reeves">
+基努李維帥翻天🥰</p>
+<p>看到這裡你大概還是想要參加Swarm ICO，請閱讀<a href="https://skysung.github.io/swarm-eth-ido/">手把手教你Swarm ICO和CoinList｜實作篇</a>，另外我創了一個Line群組做為討論這次活動之用。
+<a target="_blank" rel="noopener" href="https://line.me/ti/g2/gI75FBW804ToNt2frbVvyg?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default">群組連結</a></p>
+<hr>
+<p>目前唯一中文講解的影片<a target="_blank" rel="noopener" href="https://youtu.be/buDx_maVzb8">币圈老韭菜</a>，帶你用中文看一遍CoinList官網上的英文內容。但我個人看完覺得內容還是比較淺的，並沒有特別讓人拍手叫好的技術。也分析了公開資料的一些問題：像是早期私募大老份額占到40趴、團隊占了20%。</p>
+<p>我目前找到最詳細的中文Swarm節點架設教學，來自<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/376108926">知乎</a>。其他的資訊可以參考<a target="_blank" rel="noopener" href="https://www.ethswarm.io/news">Swarm之家</a>。</p>
+<p>有個名稱相近的Swarm Network(SWM)，是2018年想要做股權代幣的，被Coinbase和Ripple<a target="_blank" rel="noopener" href="https://www.coindesk.com/coinbase-ripple-push-back-against-swarms-equity-tokens">拒絕了</a>。名稱相近但兩者間沒關係。這也是為甚麼Swarm的代幣只好改叫(BZZ)。</p>
+<p>以太坊的<a target="_blank" rel="noopener" href="https://ethereum.org/en/developers/docs/storage/#related-tools">去中心化儲存項目列表</a></p>
+<h3 id="其他去中心化儲存">其他去中心化儲存</h3>
+<p>另一款去中心化儲存項目<a target="_blank" rel="noopener" href="https://www.chainnews.com/zh-hant/articles/124011762292.htm">Arweave</a>。文章很長，雖然內容是在講AR，但很適合你初步認識去中心化儲存世界。<s>是獨立建另外一條鏈的。(待確認，也有人認為AR算是IPFS協議上的應用層)</s></p>
+<hr>
 <h2 id="官方資料">官方資料</h2>
 <p><a target="_blank" rel="noopener" href="https://docs.ethswarm.org/the-book-of-swarm-viktor-tron-v1.0-pre-release7.pdf">THE BOOK of Swarm</a>
 <a target="_blank" rel="noopener" href="https://github.com/ethersphere/swarm">Github</a>
 <a target="_blank" rel="noopener" href="https://twitter.com/ethswarm">Swarm推特</a>，目前1萬Fellower。
-<a target="_blank" rel="noopener" href="https://discord.com/invite/wdghaQsGq5">Discord群</a>，目前30,000名成員。
+<a target="_blank" rel="noopener" href="https://discord.com/invite/wdghaQsGq5">Discord群</a>，目前30,000名成員。裡面有中文頻道，可以進去看看。
 <a target="_blank" rel="noopener" href="https://www.reddit.com/r/ethswarm/">Reddit群</a>，目前869Members。有趣的是目前有人對<a target="_blank" rel="noopener" href="https://www.reddit.com/r/ethswarm/comments/nsc7rv/no_one_knows_initial_circ_supply_no_one_knows/">CoinList不太滿意</a>。</p>
 <p>Swarm一詞可能源自於中本聰2010/12/11在論壇上的<a target="_blank" rel="noopener" href="https://bitcointalk.org/index.php?topic=2216.msg29280#msg29280">發文</a>。「the swarm is headed towards us」。</p>
 <h2 id="第三方資料">第三方資料</h2>
@@ -83,9 +135,4 @@ LBank：05/15上線，目前278USDT。</p>
 <li><a target="_blank" rel="noopener" href="https://www.feixiaohao.com/currencies/ethereumswarm/">非小號</a></li>
 <li>目前Coingecko還沒上BZZ</li>
 </ul>
-<hr>
-<p>以太坊的<a target="_blank" rel="noopener" href="https://ethereum.org/en/developers/docs/storage/#related-tools">去中心化儲存項目列表</a></p>
-<p>目前唯一中文講解的影片<a target="_blank" rel="noopener" href="https://youtu.be/buDx_maVzb8">币圈老韭菜</a>，帶你用中文看一遍CoinList上的英文內容。但我個人看完覺得內容還是比較淺的，並沒有特別讓人拍手叫好的技術。</p>
-<h3 id="其他去中心化儲存">其他去中心化儲存</h3>
-<p>另一款去中心化儲存項目<a target="_blank" rel="noopener" href="https://www.chainnews.com/zh-hant/articles/124011762292.htm">Arweave</a>。文章很長，雖然內容是在講AR，但很適合你初步認識去中心化儲存世界。<s>是獨立建另外一條鏈的。(待確認，也有人認為AR算是IPFS協議上的應用層)</s></p>
 </article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><a class="button is-default" href="/choose-bitcoin-exchange/" title="如何選擇加密貨幣交易所，是什麼讓你不敢投入？｜從0開始的區塊鏈知識：實作篇"><i class="iconfont icon-prev mr-2 has-text-grey"></i><span class="has-text-weight-semibold">上一頁: 如何選擇加密貨幣交易所，是什麼讓你不敢投入？｜從0開始的區塊鏈知識：實作篇</span></a><a class="button is-default" href="/swarm-eth-ido/" title="手把手教你Swarm ICO和CoinList｜實作篇"><span class="has-text-weight-semibold">下一頁: 手把手教你Swarm ICO和CoinList｜實作篇</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="SkySung/SkySung.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//Good_Leek_01"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/SkySung"><i class="iconfont icon-github"></i></a><!-- Ins--><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//GoodLeek"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> 安分守己的韭菜苗 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/post.js"></script></body></html>

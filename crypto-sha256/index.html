@@ -23,7 +23,7 @@ SHA系列加密演算法
 <h2 id="SHA系列加密演算法">SHA系列加密演算法</h2>
 <p>讓我們回到1993年的美國，網際網路之父Tim Berners-Lee發展的全球資訊網(World Wide Web)帶起了大量的網路基礎設施和通訊。美國感受到，未來經由網際網路傳輸資訊是勢在必行的，但將資訊近乎透明的由HTTP傳輸協定送出去，是美國不樂見的。由<strong>美國國家安全局(NSA)<strong>所設計，<strong>國家標準技術研究所(NIST)<strong>發布的</strong>SHA-0</strong>加密演算法誕生了，SHA-0可以將2^64位元的訊息，壓縮轉化成160位元的訊息摘要。它同時具有不可逆推、抗碰撞的特性。抗碰撞特性代表，不會有兩個不同的資訊，輸入進去之後得到相同的160位元摘要。發布後很快又被NSA修訂成</strong>SHA-1</strong>，修正了一些弱點。</p>
 <p>但是，我們都知道永遠不會有一個密碼是絕對安全的。1998年，CRYPTO98的密碼學大會上提出了一種SHA-0攻擊方式，能從理論上發現一次碰撞，也就是能夠有兩個不同的輸入值，得到相同的輸出值。這代表一個雜湊函式不再具有抵抗攻擊所應具備的計算複雜度。</p>
-<p>你可以這樣想像：
+<p>你可以這樣想像：<br>
 我用SHA-0演算法和一串密碼加密了一個簽名，來證明一個東西屬於我，但現在有另一個人不知道我的密碼，但它可以做出<strong>一模一樣的簽名</strong>。🤮</p>
 <p>2001年，NIST又發布了SHA-2演算法，這次在運算中的混合程度比起SHA-1大幅提升，但是技術架構上SHA-2和SHA-1雷同。(比特幣採用SHA-2家族中的SHA256加密演算法)</p>
 <p>2004年起不斷的有專家找到更多SHA-0完整碰撞的結果，而且破解結果不只是在理論上了，還出現了實務上破解，並且改進方法使的<strong>破解難度不斷地被降低</strong>。</p>
@@ -60,8 +60,8 @@ SHA系列加密演算法
 <h2 id="後記">後記</h2>
 <p>我覺得為了準備這一篇，我基本上讀的資料應該夠我寫一份密碼學科系的大學生小論文（？）我並不是數學、資工領域畢業的學生，比較沒有辨別能力的我為了要保證輸出品質，這些資料我是能盡量找原文閱讀而不屈就於被轉譯過的媒體文章。這次的主題注定艱澀小眾，但我寫起來受益良多，對整個區塊鏈底層的密碼學有了新的認識，也了解到了到底有多少人在為我們的日常生活不停的努力。</p>
 <p>其實這篇文章寫完，其實還是有一些不足的地方，以太坊基金會是以社群共識的方式運作的，在2013年應該有很多關於使用哪種加密法的討論，但是我實在沒有辦法去翻回2013年的討論一篇一篇看，就先暫時停在這裡吧。</p>
-<p>資料來源、推薦延伸閱讀：
-<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PArFP7ZJrtg">Edward Snowden - “Permanent Record” &amp; Life as an Exiled NSA Whistleblower | The Daily Show</a>
+<p>資料來源、推薦延伸閱讀：<br>
+<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PArFP7ZJrtg">Edward Snowden - “Permanent Record” &amp; Life as an Exiled NSA Whistleblower | The Daily Show</a><br>
 Snowden發表新書《永久檔案》時，在莫斯科跨洋連線到The Daily Show，強烈推薦可以看這部影片，你會發現Snowden很有幽默感(或者是我對資安領域抱有刻板印象…抱歉…)，他面臨的愛國心與憲法違背，為什麼選擇出來揭露這件事情、還有為什麼不回到美國打官司。影片中他常說他就是一個ordinary people，我去找了他的生平，他甚至學歷上只有等同高中肄業的文憑，他就是一個很喜歡電腦技術，偶爾打打電動的普通人而已。</p>
 <hr>
 <p><a target="_blank" rel="noopener" href="https://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html?pagewanted=all">N.S.A. Able to Foil Basic Safeguards of Privacy on Web</a></p>
@@ -72,7 +72,7 @@ Snowden發表新書《永久檔案》時，在莫斯科跨洋連線到The Daily 
 <hr>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=bTOJ9An9wpE">SHA-3, Keccak and SHAKE (Sponge Function)–Bill Buchanan OBE</a></p>
 <p>Bill Buchanan是愛丁堡納皮爾大學的教授，他在cyber security領域的貢獻獲得了大英帝國騎士勳章(OBE)。影片中他解說了當年競賽中其他演算法的性能比較，還有Keccak的運作原理。SHAKE是SHA-3家族中，位元數可以變動的加密演算法。從影片中我覺得講解的很生動，不會有教授上課打瞌睡的感覺，一開始看到維基百科上的邏輯運算圖我整個覺得不妙，但是教授用很簡單的方式一步驟一步驟的說明，讓我自己都很意外我居然開始看懂密碼學了，還有教授每次念Keccak(讀作catch-ache)都會卡住很好笑哈哈哈哈。可惜影片中教授也沒有給出解答，關於NIST究竟有沒有在演算法中留下後門的問題…</p>
-<p>你對密碼學有興趣？那你或許會喜歡
-<a href="https://skysung.github.io/blockchain-technology/">技術篇(一)</a>
+<p>你對密碼學有興趣？那你或許會喜歡<br>
+<a href="https://skysung.github.io/blockchain-technology/">技術篇(一)</a><br>
 <a href="https://skysung.github.io/blockchain-technology-2/">技術篇(二)</a></p>
 </article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><a class="button is-default" href="/crypto-wallet/" title="關於你的加密貨幣錢包，你不知道的事｜技術篇"><i class="iconfont icon-prev mr-2 has-text-grey"></i><span class="has-text-weight-semibold">上一頁: 關於你的加密貨幣錢包，你不知道的事｜技術篇</span></a><a class="button is-default" href="/blockchain-technology/" title="從0開始的區塊鏈知識：比特幣、區塊鏈(Bitcoin, Blockchain)｜技術篇"><span class="has-text-weight-semibold">下一頁: 從0開始的區塊鏈知識：比特幣、區塊鏈(Bitcoin, Blockchain)｜技術篇</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="SkySung/SkySung.github.io" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//Good_Leek_01"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/SkySung"><i class="iconfont icon-github"></i></a><!-- Ins--><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//GoodLeek"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> 安分守己的韭菜苗 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/js/post.js"></script></body></html>

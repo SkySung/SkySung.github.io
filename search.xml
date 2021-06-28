@@ -27,6 +27,54 @@
     
     
     <entry>
+      <title>blocto-whitepapper-review</title>
+      <link href="blocto-whitepapper-review/"/>
+      <url>blocto-whitepapper-review/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><a href="https://blocto.app.link/register?ref=ICEDAP">Blocto推薦碼</a>目前還沒有任何獎勵優惠。</p></blockquote><h2 id="本篇整理了Blocto白皮書內容-Ver1-1-2021-04">本篇整理了Blocto白皮書內容(Ver1.1/2021/04)</h2><p>白皮書本書<a href="https://token.blocto.app/#bounty_sec">在此</a><br>其中分為一頁版簡報和完整的白皮書兩種。</p><p>以下內容為完整白皮書。👇</p><h3 id="對於使用者">對於使用者</h3><p>Blocto是一個跨區塊鏈的智能合約錢包服務平台。目標是使用者在去中心化應用、NFT之間使用上順暢，減少學習成本。</p><blockquote><p>編輯碎念：智能合約錢包這件事情有點Tricky，安全性沒問題。但是當你想要轉出到外部時候要注意(eg. 其他交易所or其他錢包中)，目標地址接不接受&quot;智能合約錢包&quot;轉帳。但是只有智能合約錢包才有辦法達成跨鏈操作、Blocto協助處理後台程序等等。除了轉出問題，智能合約錢包很棒。</p></blockquote><ul><li>Blocto點數，可以支付有支援的區塊鏈的交易費用(gas fee)。</li><li>對區塊鏈熟悉的用戶，也可以直接取得私鑰，將帳戶從&quot;託管模式&quot;轉為&quot;非託管模式&quot;</li></ul><h3 id="對於開發者">對於開發者</h3><ul><li>目前唯一支持Flow區塊鏈的手機錢包。</li><li>Flow著名項目NBA Top Shot、MotoGP Ignition。</li><li>Blocto運行著Flow節點，有超過70%代筆委託Blocto質押。同時是Flow中第四大節點運營商。</li><li>目前也獲得Solana和Serum的開發補助金。</li></ul><h2 id="Blocto錢包">Blocto錢包</h2><p>現在支援Ethereum、Tron、Flow 和 Solana 區塊鏈。</p><blockquote><p>編輯碎念：目前在官方宣傳片中有幣安智能鏈。<br><img src="../images/blocto-whitepapper-review/blocto-1.jpg" alt="BSC"></p></blockquote><p>支援法定貨幣購買加密貨幣。方便又安全</p><blockquote><p>編輯碎念：只要是方便的服務，手續費那是一定要的。</p></blockquote><p>直接使用電子郵件登陸錢包<br><img src="../images/blocto-whitepapper-review/blocto-email.jpg" alt="email"><br>等到用戶使用熟悉後，也可以自主管理私鑰。</p><p>未來會發布瀏覽器擴充錢包，讓使用者在點腦上的Google chrome、firefox可以直接與dApp互動。</p><p>SDK(軟體開發套件)，目前完成了FLow鏈的Web SDK，未來會繼續開發其他鏈上SDK。</p><p>支援以太坊Layer2協議。我們已經開始與 zkSync、Loopring 和xDai 集成,並很快將會推出本地端的 layer 2 資產管理和 dApp 互動功能。我們將整合與提供 layer 2協議,用戶能夠在沒有任何額外阻礙的情況下,享受 layer 2 解決方案的高吞吐量和低成本。</p><h2 id="Blocto代幣">Blocto代幣</h2><p>BLT 持有者在使用 Blocto 旗下產品時將獲得額外優勢及好處:<br><img src="../images/blocto-whitepapper-review/blocto-app.jpg" alt="blocto-app"><br>BLT也可以作為手續費使用。</p><h3 id="質押">質押</h3><p>BLT質押獎勵為總流通量5%，開發者、用戶皆能透過質押BLT在挖礦獲取收益。<br>初期質押獎勵比例較高，會逐步降低獎勵比例。</p><h3 id="挖礦">挖礦</h3><p>25%的BLT會透過挖礦釋出。BLT代幣包含功能&amp;治理。</p><p>開發者挖礦資格：</p><ul><li>開發者無需質押即可整合 Blocto 相關之服務,欲挖礦者才需質押 BLT。</li><li>開發能與 Blocto 整合之 dApp 並質押 BLT 代幣,由 Blocto 團隊進行審核。</li><li>開發者能質押額外數量 BLT 代幣,以取得 Blocto 團隊技術相關協助。</li></ul><p>用戶挖礦資格：</p><ul><li>符合活躍用戶定義,包括推薦人數、交易總量等。</li></ul><p>挖礦比例分配：</p><ul><li>挖礦獎勵每月發放</li><li>獎勵可透過治理投票進行改更動</li><li>用戶可額外質押BLT，獲得最高3倍挖礦獎勵(編輯:目前未知)</li></ul><h2 id="代幣經濟">代幣經濟</h2><p>BLT總發行量：5億顆。<br><img src="../images/blocto-whitepapper-review/circulating.jpg" alt="blocto-circulation"></p><hr><p>創始狀態<br><img src="../images/blocto-whitepapper-review/genesis.jpg" alt="blocto-gensis"><br>初始發行量：3000萬顆(6%)。<br>挖礦獎勵1.25億顆(25%)。<br><img src="../images/blocto-whitepapper-review/distribute.jpg" alt="blocto-ditribute"><br>目前的話，這個時間點應該是生態系統中的早期支持者、用戶空投。<br>關於代幣分配，後續我為找更多資料再寫一篇文。</p><h2 id="產品">產品</h2><h3 id="Blocto-Swap">Blocto Swap</h3><ul><li>Blocto Swap基本上是Fork了UniSwap。</li><li>之後會有Flow/FUSD交易對。(編輯:FUSD是Flow鏈上的穩定幣)</li></ul><p>跨鏈交易Teleport</p><ul><li>以太坊跨鏈Flow的交易對「USDT/tUSDT」，目前已累積1000萬美元交易量</li><li>合約當中的資金也可以用於與其他 DeFi合約結合，像是機槍池 Yearn.finance 或是借貸協議 Compound.fi-nance。這些資產所獲得的收益將放入Blocto Vault</li></ul><h3 id="Blocto-Balancer">Blocto Balancer</h3><p>跨鏈自動做市商協議。<br>BLT持有者能夠創建自己的跨鏈資產池,並能夠客製化手續費以及資產分配比重。(這段重點)</p><h3 id="Blocto-拍賣行">Blocto 拍賣行</h3><p>Blocto Auction House，跨鏈NFT交易市場。無論當初NFT以哪種公鏈發行，都可以藉由Blocto購買。將鎖定在原生區塊鏈中,並取得一個佔位代幣 (placeholdertoken) 用來交易，交易後買家再以佔位代幣來申領原生區塊鏈中的 NFT。</p><h3 id="Blocto-Vault">Blocto Vault</h3><p>生態系統中的去中心化收益共享資金池。其收益來自於旗下產品,包括Blocto Swap、Blocto Balancer,以及未來 Blocto評選、戰略合作的產品,皆會有部分收益以不同形式的代幣流入 Blocto Vault 當中。<br><img src="../images/blocto-whitepapper-review/blocto-vault.jpg" alt="blocto-vault"></p><blockquote><p>編輯碎念：這段我必須誠實說沒有看很懂，不過這也是比較之後才會實現的功能。前面有提到在透過某些Defi獲得的收益會回流進Blocto Vault，我的理解是會有一部分能用BLT交換流進Vault裡的資產。</p></blockquote><h2 id="總結">總結</h2><p><img src="../images/blocto-whitepapper-review/conclusion.jpg" alt="conclusion"><br>以上👆為官方白皮書總結，我也來總結一下我的想法。<br>Blocto野心蠻大的，是一個想往世界舞台挑戰的團隊。<br>我個人是Blocto去年底開始的用戶，原先是<a href="https://www.facebook.com/452949498432713/posts/1109906919403631/">區塊勢</a>的Podcast節目認識李玄，另外在<a href="https://www.inside.com.tw/article/19576-ex-cobinhooders-who-founded-portto">INSIDE專欄</a>認識了台灣區塊鏈的過去歷史。<br>最後因為Flow和Blocto的深度合作，使用者可以加Flow質押在blocto換取更多收益，近期也因為MotoGp ignition的合作讓Blocto熱度上升。反而在台灣的熱度比較少，因為上面兩個都是國際化項目，中文資料也不多。<s>台灣法規也…</s><br>Blocto儘管年輕，但技術上我蠻有信心的，Dapper lab也是區塊鏈國際級玩家了，能和Dapper合作在Flow上做Swap，我相信可以證明其實力。<br>另外，關於優化使用者體驗也是整個區塊鏈行業目前迫切的需求。我隨便抓，現如今有80%看到加密貨幣的人會選擇完全袖手旁觀，剩下20%的人會嘗試進入中心化交易所將法幣轉換成加密貨幣，其中大概只有1%，敢將加密資產再轉到去中心化的地方，嘗試使用Staking、Add liquidity、質押等資產管理方式。在其中更小一部粉有辦法找到有趣的Dapp去持續使用。而Blocto就是要將這20%接受加密貨幣的使用者導入進Defi當中。<br>但是，這就代表Blocto一定會成功嗎？我看到的是Blocto目標很大，但對於能否實現依然也抱持問號。在台灣也有很正規的項目卻翻車的事件。<br>還有Blocto想要協助使用者體驗，卻可能會讓使用者付出較多一點點的Gas Fee，這能不能被使用者接受，還有待考驗。</p><hr><p>李玄很常出沒在Blocto的telegram當中疑難排解，偶爾也有團隊工程師看到用戶有難，直接跳出來當client engineer，覺得相當有趣。<br><img src="../images/blocto-whitepapper-review/client.jpg" alt="blocto-client"></p><p>另外還有一頁<a href="https://drive.google.com/file/d/1kqiLkWKqqF-46bFy7oW_l9ecs8lzUdq4/view">簡報在這裡</a>，內容很短我就不再贅述。</p><hr><p>官方資料：</p><ul><li><a href="https://blocto.portto.io/zh/">官方網站</a></li><li><a href="https://token.blocto.app/#bounty_sec">白皮書</a></li><li><a href="https://github.com/portto">GitHub</a></li></ul><p>社群</p><ul><li><a href="https://www.facebook.com/blocto/">Facebook</a></li><li><a href="https://t.me/bloctozh">Telegram</a></li><li><a href="https://twitter.com/BloctoApp">Twitter</a></li><li><a href="https://discord.com/invite/H34KZqF">Discord</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 入門 </tag>
+            
+            <tag> 幣圈投資 </tag>
+            
+            <tag> 熱錢包 </tag>
+            
+            <tag> 跨鏈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nft-games-introduce</title>
+      <link href="efinity-introduce/"/>
+      <url>efinity-introduce/</url>
+      
+        <content type="html"><![CDATA[<h2 id="本篇施工中">本篇施工中</h2><p>Enjin正在下一盤非常大的棋。</p><p>和Swarm相比，Enjin的合作夥伴是真的背景深厚，而且是真的有實質技術交流並且正在做產品的。這大概不用我再多贅述，太多新聞網站在寫這類內容了。<br>一樣，我來寫些冷門內容。</p><p>要開始寫Enjin的內容前，大概還是無法繞過ERC721和ERC1155。</p><h2 id="ERC標準">ERC標準</h2><h3 id="ERC721"><a href="https://github.com/ethereum/eips/issues/721">ERC721</a></h3><p>應該所有人都有聽過ERC20，都知道他是「代幣標準」的意思，符合其標準可以方便在區塊鏈上互相交換。<br>聽到ERC20，在聽到ERC721，感覺好像ERC721很新嗎？不，ERC721其實早在2017/01年被提出，提出的人是Flow區塊鏈的首席架構工程師 <a href="https://www.block123.com/zh-hant/nav/440961491133.htm">Dieter Shirley</a>。</p><h3 id="ERC1155"><a href="https://github.com/ethereum/EIPs/issues/1155">ERC1155</a></h3><p>ERC1155則是在2018/06被提出，該標準在2019已經被當作正式標準，不過目前還是OPEN的狀態，不用太擔心，不會因為有改動而造成安全性的影響。<br>提出的人是Enjin CTO <a href="https://twitter.com/witekradomski">Witek Radomski</a>，也是ERC1155的第一作者(他在Author排序第一，不過我不確定EIP系列有沒有在分作者順序)。</p><p>我們用網路遊戲來比喻，我能想到最紅的網路遊戲大概是楓之谷。</p><ul><li>ERC20：相當於遊戲裡的楓幣，就是打怪物會掉的虛擬幣。每一個楓幣都是一樣的，無論我是從怪物身上打出來，或者賣裝備給商店老闆拿到的都會是一模一樣的。</li><li>ERC721：相當於遊戲裡的裝備、防具，因為每件裝備都是獨一無二的，有可能打怪掉寶的時候數值就不太一樣。或者它可能被強化過。所以一樣是楓葉劍，可能會有+7神裝，也可能會有+0廢物。</li><li>ERC1155：有時候，我們又需要一個資產類別是可以大量堆疊、卻又不是ERC20的東西，於是ERC1155出現了。你可以理解為遊戲裡的紅藥水，紅藥水每一罐都完全相同，可以堆疊一兩百個。交易的時候可以將它整捆賣給商店老闆。<br>同時，我們還可以給ERC1155設定一些有趣的特質。例如，設定喝紅藥水(補血量)有固定的冷卻時間，要等待一段時間才能再喝一瓶。並且，同時和藍藥水(補魔力)的冷卻時間共用。這在ERC20上要實現就會相當複雜。</li></ul><p>至此，一個區塊鏈遊戲的所有特質都齊備了。有趣的是，Flow目前發行的「卡牌收藏」，的確只需要ERC721就能實現了。而Witek Radomski想做的「區塊鏈遊戲」勢必需要ERC1155的出現。也難怪後續ERC1155的作者群中並沒有Dapper Lab和Flow一掛的工程師。</p><p>這幾個代幣並不代表更新進步的象徵，不會有ERC1155比ERC20厲害的情況。只是功能取向的不同。</p><blockquote><p>這部分其實有點可惜，我才剛把<a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol">ERC20</a>的程式碼實際寫過一遍並使用過。ERC1155和721還沒有實際試過，否則我應該能介紹的更漂亮一些。</p></blockquote><h2 id="Enjin和Efinity到底有何差別">Enjin和Efinity到底有何差別?</h2><p>這是我一開始最為困惑的問題。<br>Enjin是以太坊上的ERC20代幣，但是很明顯的是，以太坊太常塞車了。若是將遊戲建構在以太坊上，</p><h2 id="Enjin現在有哪些項目">Enjin現在有哪些項目</h2><p><a href="https://enjinx.io/eth/marketplace-rankings">https://enjinx.io/eth/marketplace-rankings</a><br>這是目前Enj的交易市場，這一頁是目前有在開始可以交易的項目<br>流動量最大的Lost Relic是一個劍與魔法的RPG，類似暗黑破壞神<br>第二名是一個<a href="https://www.nestables.co/">可愛的養成遊戲</a><br>第三名很<a href="https://www.facebook.com/enjinmvb/">詭異</a><br>第四名是Banksy，之前畫被燒掉的藝術家<br>第五名也很<a href="https://enjin.io/about/multiverse">詭異</a>，有點像是遊戲開發工具(?</p><h2 id="Efinity特色功能">Efinity特色功能</h2><p>根據官網描述，Efinity幾乎不會需要和使用者互動，甚至不用區塊鏈錢包。<br><img src="../images/efinity-introduce/no-fee.jpg" alt="no-fee"><br>如果你使用過任何Defi錢包，應該有過使用時常常需要看確認授權啊、設定Gas費用等等非常麻煩的問題，想像你正在玩遊戲，突然跳出一堆英文問題要你回答，那會是相當糟糕的體驗。這裡Efinity預計會在背景幫使用者搞定一切，這個黑科技可以參考<a href="https://medium.com/getamis/meta-transactions-%E5%A6%82%E4%BD%95%E6%94%B9%E8%AE%8A-dapp-%E4%BB%98%E8%B2%BB%E7%94%9F%E6%85%8B-a7b840975028">AMIS</a>(台灣區塊鏈的審計公司)</p><h2 id="Enijin上有哪些遊戲">Enijin上有哪些遊戲</h2><p><a href="https://enjin.io/about/powered-by-enjin">https://enjin.io/about/powered-by-enjin</a></p><h2 id="其他競爭對手">其他競爭對手</h2><p><a href="https://www.youtube.com/watch?v=0Jquhzr4d4k">sandbox2021宣傳片</a><br>母公司Animoca Brands為香港遊戲公司，在2018年，Animoca Brands留意到區塊鏈技術及數碼資產擁有權的潛力，因此收購The Sandbox開發商Pixowl。</p><p><a href="https://www.animocabrands.com/about">Animoca Brands</a>不只有SandBox，還另外有了F1和MotoGP的版權。目前已經發售了MotoGP Ignite的NFT卡包(我又沒搶到!!)，還有Revv代幣(ERC20)。<br>另外還有<a href="https://0xzx.com/202007161708718753.html/amp">WWE手機遊戲</a>版權，但不一定會是區塊鏈遊戲。</p><ul><li>像素風格的遊戲很吃個人口味</li><li>玩家可以自創3D建模並賣出(以NFT創作器VoxEdit自行創作虛擬資產)</li></ul><p>參考資料<br><a href="https://reurl.cc/qgZpMq">【The Sandbox專訪】虛擬土地價格年內累升10倍 平台如何佈局虛擬經濟體系？</a></p><p>統計資料<br><a href="https://playtoearn.net/blockchaingames">https://playtoearn.net/blockchaingames</a><br><a href="https://dappradar.com/">https://dappradar.com/</a><br><a href="https://artouch.com/tag/nft">https://artouch.com/tag/nft</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> nft </tag>
+            
+            <tag> efinity </tag>
+            
+            <tag> 區塊鏈遊戲 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>NFT，或許會是支持獨立音樂的一股力量｜NFT的情感價值。</title>
       <link href="oursong-nft/"/>
       <url>oursong-nft/</url>
@@ -104,7 +152,7 @@
       <link href="twitter-recommend/"/>
       <url>twitter-recommend/</url>
       
-        <content type="html"><![CDATA[<h2 id="本篇施工中">本篇施工中</h2><p>請注意，每則Twitter下面都會有各種詐騙出沒，通常會使用非常相似的帳戶名稱來回復，通常是病毒連結或假活動聲稱有Free Money。總之連結都不用點開來。</p><h2 id="風潮、熱度KOL">風潮、熱度KOL</h2><h3 id="Elon-Musk"><a href="https://twitter.com/elonmusk">Elon Musk</a></h3><p>狗狗之王，Doge教父。<br>無庸置疑，你第一個需要追蹤的是Elon Musk。以防萬一，還是幫大家科普一下他是誰。<br>Tesla、SpaceX、Neuralink，分別是電動車、火箭、腦神經訊號的公司。偶爾會當一下全球首富，真正喊水會凍結那種。今年初開始很愛發關於Doge迷因，在社群推波助瀾下，Doge漲得亂七八糟。在美國可以用比特幣購買Tesla，這件事情也是Elon一開始在Twitter上先發幾次文，才正式公告的。今天(05/11)也發文投票，問網民們Tesla應不應該接受Doge支付。<br>以前喊單都能帶動50-60%的漲幅，但最後都會再縮回一半，最近這次喊單則在10分鐘內有15%漲幅。我大概跟了三次，手速不夠快會跟不太漲幅，也來不及逃頂，不太推薦這樣做。</p><h3 id="WSB-Wall-Street-bet">WSB, Wall Street bet</h3><p>前陣子著名的GME事件。</p><h2 id="交易所老闆">交易所老闆</h2><h3 id="幣安CZ">幣安CZ</h3><p>因為CZ有鎖留言限制，你可以看看那些人會和他線上互推，就能認識更多名人。</p><h2 id="FTX交易所SBF">FTX交易所SBF</h2><h2 id="Kraken交易所">Kraken交易所</h2><h2 id="圈內名人">圈內名人</h2><h2 id="Mark-Cuban">Mark Cuban</h2><h3 id="Ivan-on-Tech"><a href="https://twitter.com/ivanontech">Ivan on Tech</a></h3><p>創辦一家<a href="https://academy.ivanontech.com/">區塊鏈知識教育機構</a>，<a href="https://www.youtube.com/user/LiljeqvistIvan">Youtube</a>頻道有46萬人訂閱</p><h2 id="圈外名人">圈外名人</h2><h3 id="Peter-Schiff">Peter Schiff</h3><p>黃金教父、狂熱者。極度不看好比特幣。<br>有趣的是，他的兒子Spencer Schiff梭哈了加密貨幣，Peter氣炸一度表示要將Spencer從遺產列表上除名。在推特上發問大家應該要相信一個有30年投資經驗的專業經理人，還是一個18歲大學新鮮人，於是大家的<a href="https://twitter.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1303010909208666112%7Ctwgr%5E%7Ctwcon%5Es1_&amp;ref_url=https%3A%2F%2Fwww.blocktempo.com%2Fschiff-junior-wins-the-crowd-with-his-btc-investments%2F&amp;tweet_id=1303010909208666112">回答是</a>… 😏</p><h2 id="我喜歡的小眾交易員">我喜歡的小眾交易員</h2><h2 id="Waro">Waro</h2><p>現居荷蘭，幣安大戶，帳戶淨值高達千萬美金級別。安安靜靜的過他的&quot;retired&quot;生活，幣安官方帳號只有追蹤420人，他就是其中一人。<br>推特內容主要是講述交易紀律與心態。<br>這是我在幣安合約交易排行榜上找到的，排行榜上能看到各種大戶的帳戶資訊，有部分帳戶是選擇公開的，其中有些帳戶有連結自己的Twitter。<br>Waro常常抱怨自己的帳戶排行榜常常出BUG顯示不出來，或許是量太大了XD。<br>偶爾曬單，但開單不會大肆宣揚，沒有跟單這回事。只能從推特的內容向他學習對市場動態的看法。也修正我對風險管理的認知。「平時只買現貨或者1~3倍槓桿，大行情才有可能開高槓桿。」是我目前學到的。<br>話說各大交易所得高槓桿真的太浮誇，太容易被插針洗掉了。</p><h2 id="William-Clemente-III"><a href="https://mobile.twitter.com/WClementeIII">William Clemente III</a></h2><p>19歲的金融學系二年級生，之前在個人簡介中有寫學校，但我當時沒給記下來。<br>推特內容主要是分享鏈上資料分析，例如淨流入/流出交易所的Bitcoin數量、持有幣的鯨魚地址買入/賣出資料、掛單數量統計等等。這些資料其實在網路上都找的到，但Clemente會找到有意義的圖表拿出來和大家討論。加密貨幣因為在區塊鏈上的資料基本上都是半公開的，儘管我們不知道背後操縱的是誰，卻可以很輕鬆地分析它的資金流向。這是所有傳統金融都不可能發生的事情，傳統上往往要等到波克夏海瑟威的股東會才會知道巴菲特今年操作了哪些股票。(或者媒體爆料)可是你拿到這些資料時，時機往往錯過了。</p><p>經典的<a href="https://mobile.twitter.com/WClementeIII/status/1390360519253630982">牛市尚未結束分析</a>，各種你沒想過的角度去分析。<br>他的<a href="https://btcbywc3.substack.com/">訂閱電子報</a>(免費，有夠佛心)</p><h2 id="GiganticRebirth"><a href="https://mobile.twitter.com/GiganticRebirth">GiganticRebirth</a></h2><p>FTX PNL(收益額)#16(<a href="https://ftx.com/zh-Hant/leaderboard">06/12資料</a>)，我認為是我找到的Best Alt coin trader。也就是他不挑食，也會交易很多小幣種。<br>5月大洗盤前就開始小心翼翼的交易員，在五月大洗盤中賺的盆滿缽滿。</p><p>印象最深刻的是這個<br><img src="../images/twitter-recommend/gcr-share.jpg" alt="回饋"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="本篇施工中">本篇施工中</h2><p>請注意，每則Twitter下面都會有各種詐騙出沒，通常會使用非常相似的帳戶名稱來回復，通常是病毒連結或假活動聲稱有Free Money。總之連結都不用點開來。</p><h2 id="風潮、熱度KOL">風潮、熱度KOL</h2><h3 id="Elon-Musk"><a href="https://twitter.com/elonmusk">Elon Musk</a></h3><p>狗狗之王，Doge教父。<br>無庸置疑，你第一個需要追蹤的是Elon Musk。以防萬一，還是幫大家科普一下他是誰。<br>Tesla、SpaceX、Neuralink，分別是電動車、火箭、腦神經訊號的公司。偶爾會當一下全球首富，真正喊水會凍結那種。今年初開始很愛發關於Doge迷因，在社群推波助瀾下，Doge漲得亂七八糟。在美國可以用比特幣購買Tesla，這件事情也是Elon一開始在Twitter上先發幾次文，才正式公告的。今天(05/11)也發文投票，問網民們Tesla應不應該接受Doge支付。<br>以前喊單都能帶動50-60%的漲幅，但最後都會再縮回一半，最近這次喊單則在10分鐘內有15%漲幅。我大概跟了三次，手速不夠快會跟不太漲幅，也來不及逃頂，不太推薦這樣做。</p><h2 id="交易所老闆">交易所老闆</h2><h3 id="幣安CZ"><a href="https://mobile.twitter.com/cz_binance">幣安CZ</a></h3><p>因為CZ有鎖留言限制，你可以看看那些人會和他線上互推，就能認識更多名人。</p><h2 id="FTX交易所SBF"><a href="https://mobile.twitter.com/SBF_Alameda">FTX交易所SBF</a></h2><p>28歲的年輕富豪，在了解他的故事之後，我覺得他的成功並不是偶然。今天就算加密貨幣市場沒有崛起，他的態度一定還是能讓他成功。<br>這篇很新的<a href="https://www.youtube.com/watch?v=r4qB_xJpWWg">youtube</a>介紹了SBF的經歷。</p><h2 id="Kraken交易所">Kraken交易所</h2><h2 id="圈內名人">圈內名人</h2><h2 id="Mark-Cuban">Mark Cuban</h2><h3 id="Ivan-on-Tech"><a href="https://twitter.com/ivanontech">Ivan on Tech</a></h3><p>創辦一家<a href="https://academy.ivanontech.com/">區塊鏈知識教育機構</a>，<a href="https://www.youtube.com/user/LiljeqvistIvan">Youtube</a>頻道有46萬人訂閱</p><h2 id="圈外名人">圈外名人</h2><h3 id="Peter-Schiff">Peter Schiff</h3><p>黃金教父、狂熱者。極度不看好比特幣。<br>有趣的是，他的兒子Spencer Schiff梭哈了加密貨幣，Peter氣炸一度表示要將Spencer從遺產列表上除名。在推特上發問大家應該要相信一個有30年投資經驗的專業經理人，還是一個18歲大學新鮮人，於是大家的<a href="https://twitter.com/intent/like?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1303010909208666112%7Ctwgr%5E%7Ctwcon%5Es1_&amp;ref_url=https%3A%2F%2Fwww.blocktempo.com%2Fschiff-junior-wins-the-crowd-with-his-btc-investments%2F&amp;tweet_id=1303010909208666112">回答是</a>… 😏</p><h2 id="我喜歡的小眾交易員">我喜歡的小眾交易員</h2><h2 id="Waro">Waro</h2><p>現居荷蘭，幣安大戶，帳戶淨值高達千萬美金級別。安安靜靜的過他的&quot;retired&quot;生活，幣安官方帳號只有追蹤420人，他就是其中一人。<br>推特內容主要是講述交易紀律與心態。<br>這是我在幣安合約交易排行榜上找到的，排行榜上能看到各種大戶的帳戶資訊，有部分帳戶是選擇公開的，其中有些帳戶有連結自己的Twitter。<br>Waro常常抱怨自己的帳戶排行榜常常出BUG顯示不出來，或許是量太大了XD。<br>偶爾曬單，但開單不會大肆宣揚，沒有跟單這回事。只能從推特的內容向他學習對市場動態的看法。也修正我對風險管理的認知。「平時只買現貨或者1~3倍槓桿，大行情才有可能開高槓桿。」是我目前學到的。<br>話說各大交易所得高槓桿真的太浮誇，太容易被插針洗掉了。</p><h2 id="William-Clemente-III"><a href="https://mobile.twitter.com/WClementeIII">William Clemente III</a></h2><p>19歲的金融學系二年級生，之前在個人簡介中有寫學校，但我當時沒給記下來。<br>推特內容主要是分享鏈上資料分析，例如淨流入/流出交易所的Bitcoin數量、持有幣的鯨魚地址買入/賣出資料、掛單數量統計等等。這些資料其實在網路上都找的到，但Clemente會找到有意義的圖表拿出來和大家討論。加密貨幣因為在區塊鏈上的資料基本上都是半公開的，儘管我們不知道背後操縱的是誰，卻可以很輕鬆地分析它的資金流向。這是所有傳統金融都不可能發生的事情，傳統上往往要等到波克夏海瑟威的股東會才會知道巴菲特今年操作了哪些股票。(或者媒體爆料)可是你拿到這些資料時，時機往往錯過了。</p><p>經典的<a href="https://mobile.twitter.com/WClementeIII/status/1390360519253630982">牛市尚未結束分析</a>，各種你沒想過的角度去分析。<br>他的<a href="https://btcbywc3.substack.com/">訂閱電子報</a>(免費，有夠佛心)</p><h2 id="GiganticRebirth"><a href="https://mobile.twitter.com/GiganticRebirth">GiganticRebirth</a></h2><p>FTX PNL(收益額)#16(<a href="https://ftx.com/zh-Hant/leaderboard">06/12資料</a>)，我認為是我找到的Best Alt coin trader。也就是他不挑食，也會交易很多小幣種。<br>5月大洗盤前就開始小心翼翼的交易員，在五月大洗盤中賺的盆滿缽滿。</p><p>印象最深刻的是這個<br><img src="../images/twitter-recommend/gcr-share.jpg" alt="回饋"></p>]]></content>
       
       
       
@@ -416,13 +464,25 @@
     
     
     <entry>
-      <title>efinity-ico</title>
-      <link href="efinity-ico/"/>
-      <url>efinity-ico/</url>
+      <title>blocto-wallet-introduce</title>
+      <link href="blocto-wallet-introduce/"/>
+      <url>blocto-wallet-introduce/</url>
       
-        <content type="html"><![CDATA[<p>本篇施工中<br>ICO非常容易<br><a href="https://www.coinspeaker.com/ico/">https://www.coinspeaker.com/ico/</a></p><p><a href="https://www.coinspeaker.com/efinity-token-sale-announced-coinlist/">https://www.coinspeaker.com/efinity-token-sale-announced-coinlist/</a></p>]]></content>
+        <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=AzqUfXqfOVg">官方宣傳片</a></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 入門 </tag>
+            
+            <tag> 幣圈投資 </tag>
+            
+            <tag> 熱錢包 </tag>
+            
+            <tag> 跨鏈 </tag>
+            
+        </tags>
       
     </entry>
     
